@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pexels-frans-van-heerden-624015.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-div h1{
+    font-size: 5rem;
+    color: white;
+}
+.main-div p{
+    font-size: 2rem;
+    color: white;
+}
+.main-div button{
+    width: 20rem;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+}
+
+.main-div button:hover{
+    
+    background-color: rgb(19, 33, 41);
+    color: white;
+}
+
+.modal-bg{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0s , opacity 0.5s;
+}
+.bg-active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace2;
+
+    border-radius: 0.2rem;
+    box-shadow:2px 3px 6px 5px rgba(0,0,0,0.52) ;
+}
+.modal button{
+    padding: 10px 30px;
+
+    border-radius: 0.2rem;
+    border:none;
+    background-color: teal;
+    color: white;
+}
+.modal button:hover{
+    
+    background-color: rgb(28, 33, 100);
+    color: white;
+    cursor: pointer;
+}
